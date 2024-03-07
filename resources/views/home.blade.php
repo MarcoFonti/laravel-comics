@@ -33,6 +33,19 @@
                 <div class="reicpe-series">current series</div>
             </div>
         </section>
+        <!-- SEZIONE CONTENUTO  -->
+        <section id="recipe-content">
+            <!-- CONTENITORE FILM -->
+            <div class="container-films">
+                @foreach ( config('comics') as $film )
+                    <div class="recipe-films">
+                        <img src="{{ $film['thumb'] }}" alt="">
+                        <div class="text-films">{{ $film['series'] }}</div>
+                    </div>
+                @endforeach
+            </div>
+            <button class="button-films">load more</button>
+        </section>
     </main>
 </body>
 </html>
