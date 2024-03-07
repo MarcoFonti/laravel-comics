@@ -32,7 +32,7 @@ header {
 ul {
     
 
-    li {
+    .link-hover {
         border-bottom: 2px solid transparent;
     }
 
@@ -45,6 +45,6 @@ ul {
 }
 
 /* LINK SELEZIONATO */
-li:hover {
+.link-hover:hover {
     border-bottom: 2px solid #0282F9;
 }
