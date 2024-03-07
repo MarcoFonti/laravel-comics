@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ env('APP_NAME') }}</title>
-    <link rel="icon" href="{{ asset('assets/images/dc-logo.png') }}" type="images/png">
+    <link rel="icon" href="{{ asset('images/dc-logo.png') }}" type="images/png">
 
     {{-- FILE CHE COVERNA IL TUTTO --}}
     @vite('resources/js/app.js')
@@ -15,7 +15,7 @@
     <header>
         <!-- RECIPENTE LOGO -->
         <figcaption class="recipe-image">
-            <img src="{{ asset('assets/images/dc-logo.png') }}" alt="">
+            <img src="{{ asset('images/dc-logo.png') }}" alt="">
         </figcaption>
         <!-- RECIPENTE LISTA LINK -->
         <nav class="recipe-nav">
@@ -45,6 +45,15 @@
                 @endforeach
             </div>
             <button class="button-films">load more</button>
+        </section>
+        <!-- SEZIONE CONTENUTO MENU -->
+        <section id="recipe-content-comics">
+            @foreach ( config('main_menu') as $menu )  
+                <div class="recipe-comics">
+                    <img :src="{{ asset('images/'. $menu['image']) }}" alt="{{ $menu['text'] }}">
+                    <span>{{ $menu['text'] }}</span>
+                </div>
+            @endforeach
         </section>
     </main>
 </body>
