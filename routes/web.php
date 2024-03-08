@@ -16,7 +16,12 @@ use Illuminate\Support\Facades\Route;
 
 /* HOME */
 Route::get('/', function () {
-    return view('home');
+
+    $comics = config('comics');
+
+    $main_menu = config('main_menu');
+
+    return view('home', compact('comics', 'main_menu'));
 })-> name('home');
 
 /* CHARACTERS */
