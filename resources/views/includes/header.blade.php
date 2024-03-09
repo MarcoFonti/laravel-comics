@@ -11,5 +11,5 @@
                 <li class="link-hover"><a href="{{ route($link['route']) }}">{{ $link['text'] }}</a></li>
             @endforeach
         </ul>
-    </nav>
+    </nav> 
 </header>
