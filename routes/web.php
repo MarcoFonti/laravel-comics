@@ -36,7 +36,10 @@ Route::get('/comics', function () {
 
 /* MOVIES */
 Route::get('/movies', function () {
-    return view('link_header.movies');
+
+    $main_menu = config('main_menu');
+
+    return view('link_header.movies', compact('main_menu'));
 })-> name('movies');
 
 /* TV */
