@@ -21,8 +21,7 @@
     position:absolute;
     bottom: 10px;
     left: 15%;
-    height: 250px;
-    width: 200px;
+    width: 150px;
     border: 2px solid #b8b0b0;
 }
 
@@ -70,6 +69,12 @@
     text-align: end;
 }
 
+/* IMMAGINE MOVIES */
+.path-movies {
+    width: 300px;
+    height: 300px;
+}
+
 /* RECIPIENTE INFO MOVIES */
 #recipe-info-movies{
     background-color: #F6F6F6;
@@ -87,6 +92,7 @@
     gap: 30px;
 }
 
+/* TITOLO INFORMAZIONI */
 .title-info {
     font-size: 25px;
     color: #003F61;
@@ -95,15 +101,18 @@
     border-bottom: 1px solid #dcdcdc;
 }
 
+/* TITOLO ATTORI */
 .title-action{
     font-size: 16px;
     color: #003F61;
 }
 
+/* TESTO SINGOLA INFORMAZIONE */
 .title-margin{
     width: 60%;
 }
 
+/* RECIPIENTE D-FLEX */
 .d-flex-movies{
     display: flex;
     justify-content: space-between;
@@ -111,18 +120,22 @@
     border-bottom: 1px solid #dcdcdc;
 }
 
+/* RECIPIENTE TALENT */
 .recipe-talent{
     width: 50%;
 }
 
+/* SINGOLO ATTORE */
 .actors-movies{
     width: 70%;
 }
 
+/* RECIPIENTE SPECS */
 .recipe-specs{
     width: 50%;
 }
 
+/* TESTO BLUE */
 .text-blue {
     color: #4fbade ;
 }
@@ -152,3 +165,4 @@
         width: 40px;
     }
 }
+
